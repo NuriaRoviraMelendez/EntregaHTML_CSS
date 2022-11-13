@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*Estilos principales*/
+html,
+body {
+    background-color: rgb(0, 2, 18);
+}
+body,
+textarea,
+input {
+    font-size:25px;
+    font-family:'Montserrat', sans-serif;
+    color:cornsilk;
+}
+.navbar {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+.link a {
+    color: cornsilk;
+    text-shadow: 3px 3px rgb(46, 43, 43);
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    padding: 5px;
+    
+}
+
+.link {
+    padding-bottom: 20px;
+    text-align-last: right;
+}
+
+.section2 {
+    background: linear-gradient(rgb(13, 0, 26), rgb(31, 0, 65));
+    padding: 20px;
+}
+/* Barras avance */
+
+.flex-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.single-chart {
+    width: 250px;
+}
+
+.circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 250px;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+}
+
+.circle {
+    fill: none;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    animation: progress 5s ease-out forwards;
+}
+
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}
+
+.circular-chart.red .circle {
+    stroke: rgba(27, 213, 33, 0.853);
+}
+
+.circular-chart.green .circle {
+    stroke: rgb(174, 23, 182);
+}
+
+.circular-chart.blue .circle {
+    stroke: rgb(32, 152, 36);
+}
+
+
+
+.skill-name {
+    fill: #eee;
+    font-family: sans-serif;
+    font-size: 0.15em;
+    text-anchor: middle;
+}
+
+h2 {
+	font-size: 1.8rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding-bottom: 50px;
+    color:cornsilk;
+}
+
+h4 {
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	font-weight: 500;
+    color:cornsilk;
+}
+
+p {
+	font-size: 1rem;
+	margin: 10px 0;
+	line-height: 1.7em;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*Estilos Clases*/
+
+.container {
+	margin: auto;
+	max-width: 1300px;
+	overflow: auto;
+	padding: 0 20px;
+}
+
+.large {
+	font-size: 20px;
+}
+
+/* Navbar*/
+#navbar {
+	overflow: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#navbar a {
+	color: #000;
+}
+
+#navbar .logo {
+	float: left;
+	padding-top: 12px;
+}
+
+#navbar img {
+	height: 40px;
+}
+
+#navbar ul {
+	list-style: none;
+	float: right;
+}
+
+#navbar ul li {
+	float: left;
+}
+
+#navbar ul li a {
+	display: block;
+	padding: 20px;
+	text-align: center;
+}
+/* About */
+#about {
+	padding: 80px 0;
+	background: #2f0234d9;
+}
+
+.about-row {
+	display: flex;
+}
+
+.about-row-experience,
+.about-row-me {
+	width: 100%;
+	padding-left: 10px;
+}
+
+/* Formulario */
+
+input,
+textarea {
+    border: solid 2px rgba(233, 34, 34, 0.787);
+    border-radius: 20px 0 20px 0;
+    padding: 10px;
+}
+
+/* Contact */
+#contact {
+	padding: 80px 0;
+}
+
+.contact-row {
+	display: flex;
+}
+
+
+.contact-row-icon img {
+	height: 60px;
+}
+/* Footer */
+footer {
+	background: #8d1414;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.copyright {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.nav-footer {
+    display: inline-block;
+    text-align: center;
+}
